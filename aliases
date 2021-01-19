@@ -1,0 +1,41 @@
+##############################################################################
+#
+# Aliases (Zach Wilson
+#
+##############################################################################
+
+# General
+
+## Efficiency
+alias zshrc='vi ~/.zshrc && source ~/.zshrc && echo ".zshrc edited and reloaded."'
+alias .z='zshrc'
+alias aliases='vi ~/.aliases && source ~/.aliases && echo ".zshrc edited and reloaded."'
+alias .a='aliases'
+alias .n='vi ~/.vimrc'
+alias .t='vi ~/.tmux.conf'
+alias .f='cd ~/.dotfiles'
+
+## Listing
+alias ls='ls --color=auto'
+alias l='ls -CF'
+alias ll='ls -alF'
+alias la='ls -A'
+alias lla='ls -lA'
+
+## Misc.
+alias c='clear'
+hg() { history | grep -i "$1" ; }
+
+## Applications
+alias vi='vim'
+alias tmux='tmx2'
+alias grep='grep --color'
+alias ranger='ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR"'
+alias pbcopy="xclip -sel clip"
+alias wally='~/.local/share/zsa-wally/wally'
+
+## Be more verbose
+alias mv='mv -v'
+alias rm='rm -vi'
+alias cp='cp -v'
+alias ln='ln -v'

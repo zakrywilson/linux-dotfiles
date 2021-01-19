@@ -1,6 +1,7 @@
 - clean: ['~']
 
 - link:
+    ~/.aliases: aliases
     ~/.bashrc: bashrc
     ~/.gitconfig: gitconfig
     ~/.profile: profile
