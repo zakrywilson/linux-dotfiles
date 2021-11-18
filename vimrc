@@ -36,26 +36,35 @@ Plugin 'daviesjamie/vim-base16-lightline'
 " Vundle - List all plugins must be listed above (required)
 call vundle#end()
 
-" Change leader to comma
-let mapleader=';'
+" UTF-8 encoding
+set encoding=utf-8
+
+" Use the mouse
+set mouse=a
+
+" Space as Leader
+let mapleader=" "
 
 " Use new version of Vim
 set nocompatible
 
-" TODO: YouCompleteMe
+" Turn on syntax highlighting
+syntax on
 
-" TODO: codefmt
-
-" TODO: Syntastic
+" Make colors better
+set t_Co=256
 
 " Enable file-specific indentation
 filetype plugin indent on
 
-" Turn syntax on
-syntax on
+" Reload Vim config
+nnoremap <leader>R :source ~/.vimrc<CR>
 
-" Color
-set t_Co=256
+" Edit Vim config
+nnoremap <leader>.n :e ~/.vimrc<CR>
+
+" Edit Tmux config
+nnoremap <leader>.t :e ~/.tmux.conf<CR>
 
 " Base16 (source https://github.com/chriskempson/base16-shell)
 if filereadable(expand("~/.vimrc_background"))
@@ -90,6 +99,9 @@ set wildmenu
 " Show matching parenthesis
 set showmatch
 
+" Show when Leader is active
+set showcmd
+
 " Use visual bells
 set visualbell
 
@@ -103,16 +115,17 @@ set undodir=~/.vim/undo
 set noswapfile
 set nobackup
 
-" Search highlighting - Move the cursor to the matched string
-set incsearch
-
 " Search highlighting - This combo allows for caps searches to find only caps
 " words while lowercase searches use a smart search algorithm
 set ignorecase
 set smartcase
 
-" Set Esc-Esc to disable highlight
-nnoremap <ESC><ESC> :noh<CR>
+" Make splits make sense
+set splitbelow
+set splitright
+
+" Toggle search highlight
+nnoremap <silent><expr> <leader>h (&hls && v:hlsearch ? ':nohls' : ':set hls')."\n"
 
 " CtrlP - Use RipGrep instead of Grep
 if executable("rg")
