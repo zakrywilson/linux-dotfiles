@@ -77,8 +77,8 @@ zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 # Use z
 source ~/.config/z/z.sh
 
-# Use Vim
-bindkey -v
+# Use Emacs
+bindkey -e
 
 # Enable auto cd
 setopt auto_cd
