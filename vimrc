@@ -15,6 +15,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'Yggdroot/indentLine'
+Plugin 'easymotion/vim-easymotion'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'HerringtonDarkholme/yats'
@@ -65,6 +66,21 @@ nnoremap <leader>.n :e ~/.vimrc<CR>
 
 " Edit Tmux config
 nnoremap <leader>.t :e ~/.tmux.conf<CR>
+
+" EasyMotion
+let g:EasyMotion_do_mapping = 0 " Disable default mappings
+nmap s <Plug>(easymotion-s2)
+let g:EasyMotion_smartcase = 1
+map <leader>j <Plug>(easymotion-j)
+map <leader>k <Plug>(easymotion-k)
+let g:EasyMotion_use_upper = 1
+let g:EasyMotion_keys = 'STIORAMVCXZDHYWUFLPKBQ;JGNE' " nice for Colemak
+let g:EasyMotion_force_csapprox = 1
+map <Leader>s <Plug>(easymotion-sn)
+omap <Leader>s <Plug>(easymotion-tn)
+let g:EasyMotion_space_jump_first = 1
+let g:EasyMotion_enter_jump_first = 1
+let g:EasyMotion_disable_two_key_combo = 1
 
 " Base16 (source https://github.com/chriskempson/base16-shell)
 if filereadable(expand("~/.vimrc_background"))
