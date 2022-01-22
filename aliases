@@ -6,14 +6,12 @@
 
 # General
 
-## Efficiency
-alias zshrc='vi ~/.zshrc && source ~/.zshrc && echo ".zshrc edited and reloaded."'
-alias .z='zshrc'
-alias aliases='vi ~/.aliases && source ~/.aliases && echo ".zshrc edited and reloaded."'
-alias .a='aliases'
+## Config
+alias .a='vi ~/.aliases && source ~/.aliases && echo ".zshrc edited and reloaded."'
+alias .f='cd ~/.dotfiles'
 alias .n='vi ~/.vimrc'
 alias .t='vi ~/.tmux.conf'
-alias .f='cd ~/.dotfiles'
+alias .z='vi ~/.zshrc && source ~/.zshrc && echo ".zshrc edited and reloaded."'
 
 ## Listing
 alias ls='ls --color=auto'
