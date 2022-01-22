@@ -16,6 +16,10 @@ alias .s='source ~/.zshrc'
 alias .t='vi ~/.tmux.conf'
 alias .z='vi ~/.zshrc && source ~/.zshrc && echo ".zshrc edited and reloaded."'
 
+## Convenience
+alias light='base16_solarized-light'
+alias dark='base16_ocean'
+
 ## Listing
 alias ls='ls --color=auto'
 alias l='ls -CF'
