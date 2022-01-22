@@ -20,6 +20,11 @@ alias .z='vi ~/.zshrc && source ~/.zshrc && echo ".zshrc edited and reloaded."'
 alias light='base16_solarized-light'
 alias dark='base16_ocean'
 
+# Keyboards
+alias kyria='cd /home/zach/qmk_firmware/keyboards/kyria/keymaps/zakrywilson'
+alias gergo='cd /home/zach/qmk_firmware/keyboards/gergo/keymaps/zakrywilson'
+alias gergoplex='gergo'
+
 ## Listing
 alias ls='ls --color=auto'
 alias l='ls -CF'
