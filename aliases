@@ -28,7 +28,6 @@ hg() { history | grep -i "$1" ; }
 
 ## Applications
 alias vi='vim'
-alias tmux='tmx2'
 alias grep='grep --color'
 alias ranger='ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR"'
 alias pbcopy="xclip -sel clip"
