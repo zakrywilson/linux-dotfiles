@@ -3,6 +3,15 @@
 - link:
     ~/.aliases: aliases
     ~/.bashrc: bashrc
+    ~/.config/nvim/init.lua: config/nvim/init.lua
+    ~/.config/nvim/ftdetect:
+      glob: true
+      create: true
+      path: config/nvim/ftdetect/*
+    ~/.config/nvim/lua:
+      glob: true
+      create: true
+      path: config/nvim/lua/*.lua
     ~/.gitconfig: gitconfig
     ~/.local/share/gedit/styles:
       glob: true
@@ -13,6 +22,10 @@
     ~/.vimrc: vimrc
     ~/.zshrc: zshrc
 
+- create:
+    - ~/.config
+    - ~/.config/nvim
+    - ~/.config/nvim/lua/plugins
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
