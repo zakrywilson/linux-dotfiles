@@ -115,3 +115,6 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+# Load FZF
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
