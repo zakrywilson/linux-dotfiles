@@ -43,6 +43,7 @@ alias grep='grep --color'
 alias ranger='ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR"'
 alias pbcopy="xclip -sel clip"
 alias wally='~/.local/share/zsa-wally/wally'
+alias lg=lazygit
 
 ## Be more verbose
 alias mv='mv -v'
