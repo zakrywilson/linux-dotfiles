@@ -26,6 +26,7 @@
     - ~/.config
     - ~/.config/nvim
     - ~/.config/nvim/lua/plugins
+    - ~/.vim/undo
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
