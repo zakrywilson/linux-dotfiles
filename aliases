@@ -11,6 +11,7 @@ alias .a='vi ~/.aliases && source ~/.aliases && echo ".zshrc edited and reloaded
 alias .f='cd ~/.dotfiles'
 alias .fun='vi ~/.functions && source ~/.zshrc && echo ".zshrc and .functions edited and reloaded."'
 alias .i='vi ~/.dotfiles/install.conf.yaml'
+alias .k='vi ~/.config/kitty/kitty.conf'
 alias .n='vi ~/.config/nvim/init.lua'
 alias .s='source ~/.zshrc'
 alias .t='vi ~/.tmux.conf'
