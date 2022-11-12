@@ -4,6 +4,10 @@
     ~/.aliases: aliases
     ~/.bashrc: bashrc
     ~/.gitconfig: gitconfig
+    ~/.local/share/gedit/styles:
+      glob: true
+      create: true
+      path: gedit/*.xml
     ~/.profile: profile
     ~/.tmux.conf: tmux.conf
     ~/.vimrc: vimrc
