@@ -73,6 +73,10 @@ zstyle ':completion:*' verbose true
 zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#)*=0=01;31'
 zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 
+# Bash-style Emacs key commands
+# https://unix.stackexchange.com/a/392199
+autoload -U select-word-style
+select-word-style bash
 
 # Use z
 source ~/.config/z/z.sh
