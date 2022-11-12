@@ -4,6 +4,7 @@
 "
 "------------------------------------------------------------------------------
 
+" TODO: Switch to Plug
 
 " Vundle - Set the runtime path to include Vundle
 set rtp+=~/.vim/bundle/Vundle.vim
