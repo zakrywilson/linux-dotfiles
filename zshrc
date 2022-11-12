@@ -39,8 +39,13 @@ export PATH=$PATH:"/usr/lib/go-1.11/bin"
 # Local /bin
 # export PATH=$PATH:"$HOME/.local/bin"
 
+# https://www.themoderncoder.com/add-git-branch-information-to-your-zsh-prompt
+autoload -Uz vcs_info
+precmd() { vcs_info }
+zstyle ':vcs_info:git:*' formats 'on branch %b'
+
 setopt PROMPT_SUBST
-PROMPT='%F{white}╭─ %F{blue}%~ %F{white}
+PROMPT='%F{white}╭─ %F{blue}%~ %F{green}${vcs_info_msg_0_} %F{white}
 ╰>%F{default} '
 
 # Share history
