@@ -36,13 +36,17 @@ stty -ixon
 export GOPATH=$HOME/go
 export PATH=$PATH:"/usr/lib/go-1.11/bin"
 
-# Local /bin
-# export PATH=$PATH:"$HOME/.local/bin"
 
 # https://www.themoderncoder.com/add-git-branch-information-to-your-zsh-prompt
 autoload -Uz vcs_info
 precmd() { vcs_info }
 zstyle ':vcs_info:git:*' formats 'on branch %b'
+
+autoload -U select-word-style
+select-word-style bash
+
+# Local bin
+export PATH=$PATH:"$HOME/.local/bin"
 
 setopt PROMPT_SUBST
 PROMPT='%F{white}╭─ %F{blue}%~ %F{green}${vcs_info_msg_0_} %F{white}
