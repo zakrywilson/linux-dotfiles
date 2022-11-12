@@ -26,6 +26,7 @@ alias dark='base16_ocean'
 alias kyria='cd /home/zach/qmk_firmware/keyboards/kyria/keymaps/zakrywilson'
 alias gergo='cd /home/zach/qmk_firmware/keyboards/gergo/keymaps/zakrywilson'
 alias gergoplex='gergo'
+alias zmk='cd /home/zach/Development/zmk-config'
 
 ## Listing
 alias ls='ls --color=auto'
