@@ -39,7 +39,7 @@ alias lla='ls -lA'
 alias c='clear'
 
 ## Applications
-alias nvim='nvim.appimage'
+alias nvim='~/.local/bin/nvim'
 alias v='nvim'
 alias grep='grep --color'
 alias lg=lazygit
