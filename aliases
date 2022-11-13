@@ -37,15 +37,11 @@ alias lla='ls -lA'
 
 ## Misc.
 alias c='clear'
-hg() { history | grep -i "$1" ; }
 
 ## Applications
 alias nvim='nvim.appimage'
 alias v='nvim'
-alias vi='nvim'
 alias grep='grep --color'
-alias ranger='ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR"'
-alias pbcopy="xclip -sel clip"
 alias lg=lazygit
 
 ## Be more verbose
