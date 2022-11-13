@@ -96,5 +96,13 @@ setopt auto_cd
 # Load external configuration
 source ~/.aliases
 
-# Load FZF
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+# FZF
+## Bindings
+fzf_bindings="/usr/share/doc/fzf/examples/key-bindings.zsh"
+[ -f $fzf_bindings ] && source $fzf_bindings
+## Colors: https://gist.github.com/ctrlmaxdel/fbcb105a1c996993c60ab991ca5a2774
+export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS'
+    --color=fg:#e5e9f0,bg:#2E3440,hl:#81a1c1
+    --color=fg+:#e5e9f0,bg+:#2E3440,hl+:#81a1c1
+    --color=info:#eacb8a,prompt:#bf6069,pointer:#b48dac
+    --color=marker:#a3be8b,spinner:#b48dac,header:#a3be8b'
