@@ -26,7 +26,7 @@ else
 fi
 
 # VIM - Make VIM the default editor
-export VISUAL=vim
+export VISUAL=nvim
 export EDITOR="$VISUAL"
 
 # VIM - Disable CTRL-S causing editor to hang
