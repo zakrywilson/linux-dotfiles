@@ -23,6 +23,10 @@
       glob: true
       create: true
       path: config/nvim/lua/*.lua
+    ~/.config/rg/rgignore:
+      force: true
+      create: true
+      path: config/rg/rgignore
     ~/.gitconfig: gitconfig
     ~/.local/share/gedit/styles:
       glob: true

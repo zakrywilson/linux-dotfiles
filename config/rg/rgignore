@@ -1,0 +1,10 @@
+*.orig
+*.swp
+/undo
+.netrwhist
+
+# Mac
+.DS_Store
+Desktop.ini
+._*
+Thumbs.db
