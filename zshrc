@@ -87,9 +87,6 @@ zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 autoload -U select-word-style
 select-word-style bash
 
-# Use z
-source ~/.config/z/z.sh
-
 # Use Emacs
 bindkey -e
 
@@ -98,12 +95,6 @@ setopt auto_cd
 
 # Load external configuration
 source ~/.aliases
-
-# Base16 Shell
-BASE16_SHELL="$HOME/.config/base16-shell/"
-[ -n "$PS1" ] && \
-  [ -s "$BASE16_SHELL/profile_helper.sh" ] && \
-    eval "$("$BASE16_SHELL/profile_helper.sh")"
 
 # Load FZF
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
