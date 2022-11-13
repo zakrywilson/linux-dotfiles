@@ -11,6 +11,10 @@
       force: true
       path: config/lazygit/config.yml
     ~/.config/nvim/init.lua: config/nvim/init.lua
+    ~/.config/nvim/after/ftplugin:
+      glob: true
+      create: true
+      path: config/nvim/after/ftplugin/*
     ~/.config/nvim/ftdetect:
       glob: true
       create: true
