@@ -38,6 +38,7 @@ alias lla='ls -lA'
 
 ## Misc.
 alias c='clear'
+alias untar='tar -xvf'
 
 ## Applications
 alias nvim='~/.local/bin/nvim'
