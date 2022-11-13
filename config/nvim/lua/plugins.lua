@@ -73,7 +73,7 @@ return packer.startup(function()
        vim.g.EasyMotion_do_mapping = 0 -- Disable default mappings
        vim.g.EasyMotion_smartcase = 1
        vim.g.EasyMotion_use_upper = 1
-       vim.g.EasyMotion_keys = "STIORAMVCXZDHYWUFLPKBQ;JGNE" -- nice for Colemak
+       vim.g.EasyMotion_keys = "STIORAMVCXZDHYWUFLPKBQJGNE" -- nice for Colemak
        vim.g.EasyMotion_force_csapprox = 1
        vim.g.EasyMotion_space_jump_first = 1
        vim.g.EasyMotion_enter_jump_first = 1
