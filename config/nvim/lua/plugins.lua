@@ -193,7 +193,17 @@ return packer.startup(function()
 
   -- appearance ---------------------------------------------------------------
 
-  use { "EdenEast/nightfox.nvim" }
+  use { "EdenEast/nightfox.nvim",
+    config = function()
+      require("nightfox").setup({
+        options = {
+          styles = {
+            comments = "italics"
+          }
+        }
+      })
+    end
+  }
 
   use { "ackyshake/Spacegray.vim" }
 
