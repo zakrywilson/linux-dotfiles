@@ -22,9 +22,6 @@ return packer.startup(function()
 
   use { "akinsho/bufferline.nvim", requires = "kyazdani42/nvim-web-devicons" }
 
-  -- TODO: Figure out why this doesn't work
-  -- currently not working because of kitty terminal
-  -- 10/2022: it's probably not due to kitty (see float_opts below
   use {
     "akinsho/toggleterm.nvim",
     config = function()
@@ -36,7 +33,7 @@ return packer.startup(function()
             return vim.api.nvim_win_get_width("%") / 2
           end
         end,
-        open_mapping = [[<M-\>]],
+        open_mapping = [[<C-\>]],
         hide_numbers = true,
         shade_terminals = false,
         start_in_insert = true,
@@ -47,13 +44,13 @@ return packer.startup(function()
         float_opts = {
           border = "rounded",
           width = function()
-            -- return vim.api.nvim_win_get_width("%") - 25
             -- TODO: fix
+            -- return vim.api.nvim_win_get_width(0) - 25
             return 250
           end,
           height = function()
-            -- return vim.api.nvim_win_get_height("%") - 25
             -- TODO: fix
+            -- return vim.api.nvim_win_get_height("%") - 25
             return 100
           end,
           winblend = 20,
