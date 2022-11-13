@@ -29,6 +29,8 @@
     - ~/.config
     - ~/.config/nvim
     - ~/.config/nvim/lua/plugins
+    - ~/.local/bin
+    - ~/.local/opt
     - ~/.vim/undo
 
 - shell:
