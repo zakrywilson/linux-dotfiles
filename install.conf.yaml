@@ -7,6 +7,11 @@
       force: true
       create: true
       path: config/bat/config
+    ~/.config/rofi:
+      glob: true
+      force: true
+      create: true
+      path: config/rofi/*.rasi
     ~/.config/kitty/themes:
       glob: true
       create: true

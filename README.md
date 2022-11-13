@@ -8,7 +8,7 @@ Dotfiles for Linux, particularly for Debian-based systems with the Apt package m
     ```
     sudo apt-get update
     sudo apt-get install --reinstall build-essential
-    sudo apt-get install git, fzf, zsh, lazygit, tree, rg, bat
+    sudo apt-get install git, fzf, zsh, lazygit, tree, rg, bat, rofi
     ```
     
     Note: build-essential is required, as nvim-treesitter might have compile issues without it.
