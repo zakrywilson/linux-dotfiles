@@ -3,6 +3,9 @@
 - link:
     ~/.aliases: aliases
     ~/.bashrc: bashrc
+    ~/.config/lazygit/config.yml:
+      force: true
+      path: config/lazygit/config.yml
     ~/.config/nvim/init.lua: config/nvim/init.lua
     ~/.config/nvim/ftdetect:
       glob: true
