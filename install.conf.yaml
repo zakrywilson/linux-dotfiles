@@ -3,6 +3,10 @@
 - link:
     ~/.aliases: aliases
     ~/.bashrc: bashrc
+    ~/.config/kitty/themes:
+      glob: true
+      create: true
+      path: config/kitty/themes/*.conf
     ~/.config/lazygit/config.yml:
       force: true
       path: config/lazygit/config.yml
