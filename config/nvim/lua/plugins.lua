@@ -158,6 +158,7 @@ return packer.startup(function()
           "json",
           "lua",
           "python",
+          "rasi",
           "regex",
           "toml",
           "typescript",
