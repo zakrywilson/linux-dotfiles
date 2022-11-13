@@ -9,6 +9,7 @@
       path: config/kitty/themes/*.conf
     ~/.config/lazygit/config.yml:
       force: true
+      create: true
       path: config/lazygit/config.yml
     ~/.config/nvim/init.lua: config/nvim/init.lua
     ~/.config/nvim/after/ftplugin:
