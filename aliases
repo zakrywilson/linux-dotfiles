@@ -7,16 +7,16 @@
 # General
 
 ## Config
-alias .a='vi ~/.aliases && source ~/.aliases && echo ".zshrc edited and reloaded."'
+alias .a='v ~/.aliases && source ~/.aliases && echo ".zshrc edited and reloaded."'
 alias .f='cd ~/.dotfiles'
-alias .fun='vi ~/.functions && source ~/.zshrc && echo ".zshrc and .functions edited and reloaded."'
-alias .i='vi ~/.dotfiles/install.conf.yaml'
-alias .k='vi ~/.config/kitty/kitty.conf'
-alias .n='vi ~/.config/nvim/init.lua'
-alias .v='vi ~/.vimrc'
+alias .fun='v ~/.functions && source ~/.zshrc && echo ".zshrc and .functions edited and reloaded."'
+alias .i='v ~/.dotfiles/install.conf.yaml'
+alias .k='v ~/.config/kitty/kitty.conf'
+alias .n='v ~/.config/nvim/init.lua'
+alias .v='v ~/.vimrc'
 alias .s='source ~/.zshrc'
-alias .t='vi ~/.tmux.conf'
-alias .z='vi ~/.zshrc && source ~/.zshrc && echo ".zshrc edited and reloaded."'
+alias .t='v ~/.tmux.conf'
+alias .z='v ~/.zshrc && source ~/.zshrc && echo ".zshrc edited and reloaded."'
 
 ## Convenience
 alias light='base16_solarized-light'
