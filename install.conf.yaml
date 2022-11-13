@@ -3,6 +3,10 @@
 - link:
     ~/.aliases: aliases
     ~/.bashrc: bashrc
+    ~/.config/bat/config:
+      force: true
+      create: true
+      path: config/bat/config
     ~/.config/kitty/themes:
       glob: true
       create: true
