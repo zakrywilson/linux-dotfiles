@@ -17,7 +17,12 @@ return packer.startup(function()
   use { -- TODO: configure with lsp
     "RRethy/vim-illuminate",
     event = "BufEnter",
-    config = function() vim.g.Illuminate_delay = 500 end
+    config = function() vim.g.Illuminate_delay = 500 end,
+    providers = {
+      'lsp',
+      'treesitter',
+      'regex',
+    },
   }
 
   use { "akinsho/bufferline.nvim", requires = "kyazdani42/nvim-web-devicons" }
