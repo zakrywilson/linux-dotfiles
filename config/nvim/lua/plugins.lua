@@ -35,7 +35,7 @@ return packer.startup(function()
           if term.direction == "horizontal" then
             return 20
           elseif term.direction == "vertical" then
-            return vim.api.nvim_win_get_width("%") / 2
+            return vim.api.nvim_win_get_width(0) / 2
           end
         end,
         open_mapping = [[<C-\>]],
