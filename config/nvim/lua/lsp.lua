@@ -68,6 +68,8 @@ if executable("bash-language-server") then
   lspconfig.bashls.setup {
     capabilities = capabilities,
   }
+else
+  vim.notify("bash-language-server not found!", vim.log.levels.WARN, { title = "Nvim-config" })
 end
 
 -- Lua
@@ -104,4 +106,6 @@ if executable("lua-language-server") then
     },
     capabilities = capabilities,
   }
+else
+  vim.notify("lua-language-server not found!", vim.log.levels.WARN, { title = "Nvim-config" })
 end
