@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# source: https://github.com/sumneko/lua-language-server/wiki/Getting-Started#command-line
+
+exec "$HOME/.local/share/lua-language-server/bin/lua-language-server" "$@"

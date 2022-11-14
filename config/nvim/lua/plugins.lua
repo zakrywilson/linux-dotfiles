@@ -232,6 +232,7 @@ return packer.startup(function()
   -- lua ----------------------------------------------------------------------
   
   use { "euclidianAce/BetterLua.vim" }
+  use { "folke/neodev.nvim" }
 
   -- use { "jose-elias-alvarez/null-ls.nvim" }
  
