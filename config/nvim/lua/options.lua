@@ -40,3 +40,4 @@ g.loaded_zip = 1
 g.loaded_zipPlugin = 1
 
 require("plugins")
+require("lsp")
