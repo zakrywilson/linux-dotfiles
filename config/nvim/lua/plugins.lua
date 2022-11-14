@@ -13,7 +13,7 @@ return packer.startup(function()
 
 
   -- general ------------------------------------------------------------------
- 
+
   use { -- TODO: configure with lsp
     "RRethy/vim-illuminate",
     event = "BufEnter",
@@ -59,7 +59,7 @@ return packer.startup(function()
             background = "Normal",
           },
         },
-      } 
+      }
      end
    }
 
@@ -187,7 +187,7 @@ return packer.startup(function()
       require("nvim-tree").setup({})
     end,
   }
-  
+
 
   -- appearance ---------------------------------------------------------------
 
@@ -216,7 +216,7 @@ return packer.startup(function()
   use { "savq/melange" }
 
   -- use { "shaunsingh/nord.nvim" }
-  
+
 
   -- lsp ----------------------------------------------------------------------
 
@@ -230,14 +230,10 @@ return packer.startup(function()
   use { "saadparwaiz1/cmp_luasnip" }
 
   -- lua ----------------------------------------------------------------------
-  
+
   use { "euclidianAce/BetterLua.vim" }
   use { "folke/neodev.nvim" }
 
   -- use { "jose-elias-alvarez/null-ls.nvim" }
- 
+
 end)
-
-
-
-
