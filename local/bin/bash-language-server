@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# source: https://github.com/bash-lsp/bash-language-server#neovim
+
+exec "$HOME/.local/share/bash-language-server/node_modules/bash-language-server/bin/main.js" "$@"

@@ -63,6 +63,13 @@ else
   vim.notify("pylsp not found!", vim.log.levels.WARN, { title = "Nvim-config" })
 end
 
+-- Bash
+if executable("bash-language-server") then
+  lspconfig.bashls.setup {
+    capabilities = capabilities,
+  }
+end
+
 -- Lua
 require("neodev").setup({})
 if executable("lua-language-server") then
