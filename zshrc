@@ -36,7 +36,6 @@ stty -ixon
 export GOPATH=$HOME/go
 export PATH=$PATH:"/usr/lib/go-1.11/bin"
 
-
 # https://www.themoderncoder.com/add-git-branch-information-to-your-zsh-prompt
 autoload -Uz vcs_info
 precmd() { vcs_info }
@@ -95,6 +94,11 @@ setopt auto_cd
 
 # Load external configuration
 source ~/.aliases
+
+# NVM for Node
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 
 # FZF
 ## Bindings
