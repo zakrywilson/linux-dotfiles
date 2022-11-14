@@ -38,6 +38,10 @@
       create: true
       path: config/rg/rgignore
     ~/.gitconfig: gitconfig
+    ~/.local/bin:
+      glob: true
+      create: true
+      path: local/bin/*
     ~/.local/share/gedit/styles:
       glob: true
       create: true
