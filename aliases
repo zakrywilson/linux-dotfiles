@@ -47,6 +47,7 @@ alias nvim='~/.local/bin/nvim'
 alias v='nvim'
 alias grep='grep --color'
 alias lg=lazygit
+alias redshift-start="pkill redshift && redshift -t 5700:4000 -l 30.23:-97.72 -m randr -g 0.9 &"
 
 ## Be more verbose
 alias mv='mv -v'
