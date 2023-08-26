@@ -141,11 +141,11 @@ return packer.startup(function()
 
 -- use { "mizlan/iswap.nvim" }
 
-   use { "norcalli/nvim-colorizer.lua", event = "BufEnter" }
+  use { "norcalli/nvim-colorizer.lua", event = "BufEnter" }
 
 -- use { "ntpeters/vim-better-whitespace", event = "BufEnter"  }
 
-   use { "nvim-treesitter/nvim-treesitter",
+  use { "nvim-treesitter/nvim-treesitter",
     run = ":TSUpdate",
     config = function()
       require("nvim-treesitter.configs").setup({
