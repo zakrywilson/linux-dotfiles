@@ -65,23 +65,23 @@ return packer.startup(function()
           },
         },
       }
-     end
-   }
+    end
+  }
 
-   use {
-     "easymotion/vim-easymotion",
-     event = "BufEnter",
-     config = function()
-       vim.g.EasyMotion_do_mapping = 0 -- Disable default mappings
-       vim.g.EasyMotion_smartcase = 1
-       vim.g.EasyMotion_use_upper = 1
-       vim.g.EasyMotion_keys = "STIORAMVCXZDHYWUFLPKBQJGNE" -- nice for Colemak
-       vim.g.EasyMotion_force_csapprox = 1
-       vim.g.EasyMotion_space_jump_first = 1
-       vim.g.EasyMotion_enter_jump_first = 1
-       vim.g.EasyMotion_disable_two_key_combo = 1
-     end
-   }
+  use {
+    "easymotion/vim-easymotion",
+    event = "BufEnter",
+    config = function()
+      vim.g.EasyMotion_do_mapping = 0 -- Disable default mappings
+      vim.g.EasyMotion_smartcase = 1
+      vim.g.EasyMotion_use_upper = 1
+      vim.g.EasyMotion_keys = "STIORAMVCXZDHYWUFLPKBQJGNE" -- nice for Colemak
+      vim.g.EasyMotion_force_csapprox = 1
+      vim.g.EasyMotion_space_jump_first = 1
+      vim.g.EasyMotion_enter_jump_first = 1
+      vim.g.EasyMotion_disable_two_key_combo = 1
+    end
+  }
 
 -- use { "famiu/bufdelete.nvim" }
 
