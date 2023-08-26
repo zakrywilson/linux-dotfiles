@@ -34,9 +34,8 @@ export EDITOR="$VISUAL"
 # VIM - Disable CTRL-S causing editor to hang
 stty -ixon
 
-# Golang - Set path
-export GOPATH=$HOME/go
-export PATH=$PATH:"/usr/lib/go-1.11/bin"
+# Golang
+export PATH=$PATH:/usr/local/go/bin
 
 # https://www.themoderncoder.com/add-git-branch-information-to-your-zsh-prompt
 autoload -Uz vcs_info
