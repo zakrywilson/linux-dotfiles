@@ -1,0 +1,10 @@
+#!/bin/bash
+#
+# Launches the Kitty terminal using wmctrl
+
+# Check if Kitty is running
+if pgrep -x "kitty" > /dev/null; then
+  wmctrl -xa "kitty"
+else
+  kitty
+fi

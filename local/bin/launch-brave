@@ -1,0 +1,10 @@
+#!/bin/bash
+#
+# Launches the Brave Browser using wmctrl
+
+# Check if Brave is running
+if pgrep -x "brave" > /dev/null; then
+  wmctrl -xa "Brave"
+else
+  brave-browser
+fi
