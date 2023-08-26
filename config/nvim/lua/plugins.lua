@@ -129,15 +129,15 @@ return packer.startup(function()
 
 -- use { "mchughj/vim-mercurial", event = "BufEnter" }
 
-   use {
-     "mhinz/vim-signify",
-     event = "VimEnter",
-     config = function()
-       vim.g.signify_vcs_list = { "git" }
-       vim.g.signify_sign_change = "*"
-       vim.g.signify_sign_delete = "-"
-     end
-   }
+  use {
+    "mhinz/vim-signify",
+    event = "VimEnter",
+    config = function()
+      vim.g.signify_vcs_list = { "git" }
+      vim.g.signify_sign_change = "*"
+      vim.g.signify_sign_delete = "-"
+    end
+  }
 
 -- use { "mizlan/iswap.nvim" }
 
