@@ -23,6 +23,7 @@ return packer.startup(function()
       'treesitter',
       'regex',
     },
+    min_count_to_highlight = 2,
   }
 
   use { "akinsho/bufferline.nvim", requires = "kyazdani42/nvim-web-devicons" }
