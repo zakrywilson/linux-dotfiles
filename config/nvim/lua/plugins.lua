@@ -87,13 +87,13 @@ return packer.startup(function()
 
 -- use { "henriquehbr/nvim-startup.lua" }
 
-   use { "junegunn/fzf", event = "BufEnter", run = "./install --bin" }
+  use { "junegunn/fzf", event = "BufEnter", run = "./install --bin" }
 
-   use {
-     "junegunn/fzf.vim",
-     event = "BufEnter",
-     config = function()
-       vim.cmd([[
+  use {
+    "junegunn/fzf.vim",
+    event = "BufEnter",
+    config = function()
+      vim.cmd([[
          let g:fzf_colors = {
            \ 'fg':      ['fg', 'Normal'],
            \ 'bg':      ['bg', 'Normal'],
@@ -118,8 +118,8 @@ return packer.startup(function()
          command! -bang Buffers
            \ call fzf#vim#buffers(fzf#vim#with_preview(), <bang>0)
        ]])
-     end
-   }
+    end
+  }
 
 -- use { "kamykn/spelunker.vim", event = "BufEnter" }
 
